@@ -1,20 +1,20 @@
 import styled from "styled-components";
 import WindowSection from '../PvcWindows/WindowSection.jsx';
-import { data } from "./NonStandartWindows.js"
+import { data } from "./PlasticDoors.js"
 import { Header } from "../../Header/Header"
 import { Podval } from "../../Podval/Podval"
 
-const NonStandartWindowsComponend = ({className}) => {
+const PlasticDoorsComponend = ({className}) => {
 
    return (
         <div>
             <Header />
             <div className={className}>
                 <div className="fw-container">
-                    <h3 className="PVC_h3">Нестандартные окна</h3>
+                    <h3 className="PVC_h3">Пластиковые двери</h3>
                 </div>
                 <div className="sections">
-                    <WindowSection data={data} />
+                    <WindowSection data={data} reverse={false} showReadMore={false} />
                 </div>
             </div>
             <Podval />
@@ -26,14 +26,15 @@ const NonStandartWindowsComponend = ({className}) => {
 
 
 
-export const NonStandartWindows = styled(NonStandartWindowsComponend)`
-    .section {
+export const PlasticDoors = styled(PlasticDoorsComponend)`.section {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
+		flex-direction: row-reverse;
 		justify-content: space-between;
 		gap: 50px;
 
-		max-width: 1170px;
+
+		max-width: 1380px;
 		margin: 0 auto 100px auto;
 	}
 
@@ -54,8 +55,9 @@ export const NonStandartWindows = styled(NonStandartWindowsComponend)`
 
 	.fw-text {
 		width: 100%;
-		max-width: 555px;
+		max-width: 800px;
 	}
+
 	.fw-container {
 		display: flex;
 		justify-content: center;
@@ -98,7 +100,7 @@ export const NonStandartWindows = styled(NonStandartWindowsComponend)`
 	}
 	.fw-text {
 		font-family: 'Roboto Slab';
-		width: 555px;
+		width: 100%;
 		color: #29293a;
 		font-size: 20px;
 		line-height: 32px;
@@ -120,5 +122,4 @@ export const NonStandartWindows = styled(NonStandartWindowsComponend)`
 		font-size: 19px;
 		line-height: 32px;
 		text-align: center;
-	}
-`
+	}`
