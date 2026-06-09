@@ -6,22 +6,22 @@ const ProductsContainer = ({ className }) => {
 	const mass = [
 		{
 			id: 1,
-			img: '../../public/пластиковые-окна.jpg',
+			img: '../../public/./Product/пластиковые-окна.jpg',
 			text: 'Пластиковые окна',
 			href: '/PvcWindows',
 		},
-		{ id: 2, img: '../../public/люминевое.jpg', text: 'Алюминиевые окна',href:'/AluminumWindows' },
-		{ id: 3, img: '../../public/лоджия.jpg', text: 'Балконы и лоджии', href:'/BalconiesLoggias' },
-		{ id: 4, img: '../../public/нестандартное.jpg', text: 'Нестандартные окна', href:'/NonStandartWindows' },
+		{ id: 2, img: '../../public/./Product/люминевое.jpg', text: 'Алюминиевые окна',href:'/AluminumWindows' },
+		{ id: 3, img: '../../public/./Product/лоджия.jpg', text: 'Балконы и лоджии', href:'/BalconiesLoggias' },
+		{ id: 4, img: '../../public/./Product/нестандартное.jpg', text: 'Нестандартные окна', href:'/NonStandartWindows' },
 		{
 			id: 5,
-			img: '../../public/перегородки-пвх.jpg',
+			img: '../../public/./Product/перегородки-пвх.jpg',
 			text: 'Перегородки из ПВХ',
 			href:'/PvcPartitions'
 		},
 		{
 			id: 6,
-			img: '../../public/пластиковые-двери.jpg',
+			img: '../../public/./Product/пластиковые-двери.jpg',
 			text: 'Пластиковые двери',
 			href:'/PlasticDoors'
 		},

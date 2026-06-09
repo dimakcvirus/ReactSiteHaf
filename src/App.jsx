@@ -6,6 +6,7 @@ import { PvcPartitions } from './ProductsPage/PvcPartitions/PvcPartitions.jsx';
 import { BalconiesLoggias } from './ProductsPage/BalconiesLoggias/BalconiesLoggias.jsx';
 import {NonStandartWindows } from './ProductsPage/non-standardWindows/NonStandartWindows.jsx'
 import { PlasticDoors } from './ProductsPage/PlasticDoors/PlasticDoors.jsx';
+import { ProductUslug } from './ProductUslug/ProductUslug.jsx';
 import { BrowserRouter, Routes, Router, Link, Route } from 'react-router-dom';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 						<Route path='/NonStandartWindows' element={<NonStandartWindows/>}/>
 						<Route path='/PvcPartitions' element={<PvcPartitions/>}/>
 						<Route path='/PlasticDoors' element={<PlasticDoors/>}/>
+						<Route path='/ProductUslug' element={<ProductUslug/>}/>
 					</Routes>
 				</BrowserRouter>
 			</div>
