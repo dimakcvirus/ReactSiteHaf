@@ -32,6 +32,8 @@ const ProductsContainer = ({ className }) => {
 				<h3>Наша продукция</h3>
 			</div>
 			<Product mass={mass} />
+			<div className='product_button'><button className="all_products">Все продукты</button></div>
+
 		</div>
 	);
 };
@@ -39,10 +41,14 @@ const ProductsContainer = ({ className }) => {
 export const Products = styled(ProductsContainer)`
 	padding: 40px 0;
 	margin: 0;
+	
 
 	.product_text {
 		text-align: center;
 		margin-bottom: 30px;
+	}
+	.product_button{
+		display: flex;
 	}
 
 	.product_text h3 {
@@ -54,5 +60,16 @@ export const Products = styled(ProductsContainer)`
 		text-transform: uppercase;
 		color: #222938;
 		margin: 0;
+	}
+.all_products {
+		background-color: #0c54a0;
+		font-size: 34px;
+		color: #fff;
+		width: 268px;
+		height: 74px;
+		margin: 0 auto;
+	}
+	a{
+		text-decoration: none;
 	}
 `;

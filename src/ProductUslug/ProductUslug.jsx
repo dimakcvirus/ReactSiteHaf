@@ -37,27 +37,27 @@ const ProductUslugComponent = ({className}) =>{
             id:8,
             img:"../../public/Product/стеклопакет-300x300.jpg",
             text:"Стеклопакеты",
-            href:""
+            href:"/DoubleGazedWindows"
         },{
             id:9,
             img:"../../public/Product/фурнитура-300x300.jpg",
             text:"Фурнитура",
-            href:""
+            href:"/Fittings"
         },{
             id:10,
             img:"../../public/Product/подоконники-300x300.jpg",
             text:"Подоконники",
-            href:""
+            href:"/WindowStill"
         },{
             id:11,
             img:"../../public/Product/водотливы-300x300.jpg",
             text:"Водоотливы",
-            href:""
+            href:"/DrainageSystem"
         },{
             id:12,
             img:"../../public/Product/раздвежные-двери-300x300.jpg",
             text:"Раздвижные двери",
-            href:""
+            href:"/SlidingDoors"
         }
 	];
 
@@ -96,7 +96,7 @@ export const ProductUslug = styled(ProductUslugComponent)`
 		line-height: 44px;
 		text-transform: uppercase;
 		color: #222938;
-		margin: 0;
+		margin: 30px;
 	}
     
     `

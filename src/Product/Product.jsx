@@ -20,13 +20,12 @@ const ProductContainer = ({ className, mass }) => {
 					</Link>
 				</div>
 			))}
-			<button className="all_products">Все продукты</button>
 		</div>
 	);
 };
 
 export const Product = styled(ProductContainer)`
-	margin: 0 auto;
+	margin: 0 auto 30px;
 	display: flex;
 	flex-wrap: wrap;
 	width: 1170px;
