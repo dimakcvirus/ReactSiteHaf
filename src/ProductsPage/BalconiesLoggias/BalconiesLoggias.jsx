@@ -1,41 +1,39 @@
 import styled from 'styled-components';
 import WindowSection from '../PvcWindows/WindowSection.jsx';
-import { data } from "./aliminumWindows.js"
+import { data } from "./BalconiesLoggias.js"
 import { Header } from "../../Header/Header"
 import { Podval } from "../../Podval/Podval"
 
 
-const AluminemWindowsContainer = ({className}) =>{
-    return (
-        <>
-        <Header/>
-    <div className={className}>
-               <div className="fw-container">
-                    <h3 className='PVC_h3'>Алюминиевые окна</h3>
-               </div>
-               <div className="sections">
-                    <WindowSection data={data} reverse={false} showReadMore={false} />
-                </div>
-        </div>
-        <Podval/>
-        </>
-    
-)
-} 
+
+
+const BalconiesLoggiasContainer = ({className})=>{
+
+    return <>
+          <Header/>
+       <div className={className}>
+                  <div className="fw-container">
+                       <h3 className='PVC_h3'>Балконы и лоджии</h3>
+                  </div>
+                  <div className="sections">
+                       <WindowSection data={data} />
+                   </div>
+           </div>
+           <Podval/>
+    </>
+}
 
 
 
 
-export const AluminumWindows = styled(AluminemWindowsContainer)`
-	.section {
+export const BalconiesLoggias = styled(BalconiesLoggiasContainer)`
+    .section {
 		display: flex;
-		align-items: flex-start;
-		flex-direction: row-reverse;
+		align-items: center;
 		justify-content: space-between;
 		gap: 50px;
 
-
-		max-width: 1380px;
+		max-width: 1170px;
 		margin: 0 auto 100px auto;
 	}
 
@@ -56,9 +54,9 @@ export const AluminumWindows = styled(AluminemWindowsContainer)`
 
 	.fw-text {
 		width: 100%;
-		max-width: 800px;
+		max-width: 555px;
 	}
-
+	height: 3629px;
 	.fw-container {
 		display: flex;
 		justify-content: center;
@@ -101,7 +99,7 @@ export const AluminumWindows = styled(AluminemWindowsContainer)`
 	}
 	.fw-text {
 		font-family: 'Roboto Slab';
-		width: 100%;
+		width: 555px;
 		color: #29293a;
 		font-size: 20px;
 		line-height: 32px;
@@ -124,5 +122,4 @@ export const AluminumWindows = styled(AluminemWindowsContainer)`
 		line-height: 32px;
 		text-align: center;
 	}
-    
 `
