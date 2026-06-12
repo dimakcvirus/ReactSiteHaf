@@ -12,16 +12,18 @@ const ProductsContainer = ({ className }) => {
 		},
 		{ id: 2, img: '../../public/люминевое.jpg', text: 'Алюминиевые окна',href:'/AluminumWindows' },
 		{ id: 3, img: '../../public/лоджия.jpg', text: 'Балконы и лоджии', href:'/BalconiesLoggias' },
-		{ id: 4, img: '../../public/нестандартное.jpg', text: 'Нестандартные окна' },
+		{ id: 4, img: '../../public/нестандартное.jpg', text: 'Нестандартные окна', href:'/NonStandartWindows' },
 		{
 			id: 5,
 			img: '../../public/перегородки-пвх.jpg',
 			text: 'Перегородки из ПВХ',
+			href:'/PvcPartitions'
 		},
 		{
 			id: 6,
 			img: '../../public/пластиковые-двери.jpg',
 			text: 'Пластиковые двери',
+			href:'/PlasticDoors'
 		},
 	];
 	return (

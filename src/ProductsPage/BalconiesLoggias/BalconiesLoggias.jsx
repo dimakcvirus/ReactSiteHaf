@@ -56,7 +56,7 @@ export const BalconiesLoggias = styled(BalconiesLoggiasContainer)`
 		width: 100%;
 		max-width: 555px;
 	}
-	height: 3629px;
+
 	.fw-container {
 		display: flex;
 		justify-content: center;
