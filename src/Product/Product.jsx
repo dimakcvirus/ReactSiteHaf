@@ -57,4 +57,8 @@ export const Product = styled(ProductContainer)`
 		height: 74px;
 		margin: 0 auto;
 	}
+	a{
+		text-decoration: none;
+	}
 `;
+// 

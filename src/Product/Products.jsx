@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Product } from './Product.jsx';
+import { href } from 'react-router-dom';
 
 const ProductsContainer = ({ className }) => {
 	const mass = [
@@ -9,7 +10,7 @@ const ProductsContainer = ({ className }) => {
 			text: 'Пластиковые окна',
 			href: '/PvcWindows',
 		},
-		{ id: 2, img: '../../public/люминевое.jpg', text: 'Алюминиевые окна' },
+		{ id: 2, img: '../../public/люминевое.jpg', text: 'Алюминиевые окна',href:'/AluminumWindows' },
 		{ id: 3, img: '../../public/лоджия.jpg', text: 'Балконы и лоджии' },
 		{ id: 4, img: '../../public/нестандартное.jpg', text: 'Нестандартные окна' },
 		{
