@@ -1,14 +1,22 @@
 import { ReadMore } from './ReadMore';
 
-export default function WindowSection({ data, reverse = true, showReadMore = true,}) {
+export default function WindowSection({
+	data,
+	reverse = true,
+	showReadMore = true,
+	sectionMargin = '0 auto 100px auto',
+}) {
 	return data.map((item, index) => (
-		<div key={item.title} className={`section ${reverse && index % 2 ? 'reverse' : ''}`}>
+		<div
+			key={item.title}
+			className={`section ${reverse && index % 2 ? 'reverse' : ''}`}
+			style={{ margin: sectionMargin }}
+		>
 			<div className="fw-text-box">
 				<h5 className="fw-special-title">{item.title}</h5>
 				<div className="fw-text">
 					<p>{item.text}</p>
 
-					
 					{showReadMore ? (
 						<ReadMore width={item.width}>
 							<p>{item.hiddenText.text}</p>

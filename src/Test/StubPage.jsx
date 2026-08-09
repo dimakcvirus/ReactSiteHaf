@@ -1,6 +1,3 @@
-import React from 'react';
-import './StubPage.css';
-
 const StubPage = () => {
 	return (
 		<div className="stub-container">
