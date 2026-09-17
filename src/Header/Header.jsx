@@ -50,14 +50,14 @@ export const Header = () => {
 					<Link to="/company" className="no-style-link">
 						<span className="header__nav-item">О компании</span>
 					</Link>
-					<Link to="ProductUslug" className="no-style-link">
+					<Link to="/ProductUslug" className="no-style-link">
 						<span className="header__nav-item">Продукция и услуги</span>
 					</Link>
 
-					<Link to="" className="no-style-link">
+					<Link to="/ForPartners" className="no-style-link">
 						<span className="header__nav-item">Для партнеров</span>
 					</Link>
-					<Link to="" className="no-style-link">
+					<Link to="/ForDealers" className="no-style-link">
 						<span className="header__nav-item">Для дилеров</span>
 					</Link>
 					<Link to="" className="no-style-link">

@@ -1,62 +1,64 @@
-import styled from "styled-components";
-import { Header } from "../../Header/Header";
-import { Podval } from "../../Podval/Podval";
-import {data} from "./Fittings"
-import WindowSection from "../PvcWindows/WindowSection";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Header } from '../../Header/Header';
+import { Podval } from '../../Podval/Podval';
+import { data } from './Fittings';
+import WindowSection from '../PvcWindows/WindowSection';
+import { Link } from 'react-router-dom';
 
-
-const FittingsComponent = ({className}) =>{
-
-
-    return (
-          <>
-               <Header/>
-           <div className={className}>
-                      <div className="fw-container">
-                           <h3 className='PVC_h3'>Фурнитура</h3>
-                      </div>
-                      <div className="sections">
-                           <WindowSection data={data} reverse={false} showReadMore={false} margin= {'0 0 0 0' } />
-                           <div className="fur_links">
-                           <ul >
-                            <li>Axor <Link>Скачать каталог</Link></li>
-                            <li>ROTO NT <Link>Скачать каталог</Link></li>
-                            <li>SIEGENIA-TITAN <Link>Скачать каталог</Link></li>
-                            <li>INTERNIKA</li>
-                            <li> и другие</li>
-                           </ul>
-                           </div>
-                       </div>
-               </div>
-               <Podval/>
-               </>
-    )
-}
-
-
-
-
+const FittingsComponent = ({ className }) => {
+	return (
+		<>
+			<Header />
+			<div className={className}>
+				<div className="fw-container">
+					<h3 className="PVC_h3">Фурнитура</h3>
+				</div>
+				<div className="sections">
+					<WindowSection
+						data={data}
+						reverse={false}
+						showReadMore={false}
+						sectionMargin="0 auto 30px auto"
+					/>
+					<div className="fur_links">
+						<ul>
+							<li className="fw-text">
+								Axor <Link>Скачать каталог</Link>
+							</li>
+							<li className="fw-text">
+								ROTO NT <Link>Скачать каталог</Link>
+							</li>
+							<li className="fw-text">
+								SIEGENIA-TITAN <Link>Скачать каталог</Link>
+							</li>
+							<li className="fw-text">INTERNIKA</li>
+							<li className="fw-text"> и другие</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<Podval />
+		</>
+	);
+};
 
 export const Fittings = styled(FittingsComponent)`
-    
-.section {
+	.section {
 		display: flex;
 		align-items: flex-start;
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		gap: 50px;
 
-
 		max-width: 1380px;
 		margin: 0 auto 100px auto;
 	}
 
-    .fur_links {
-        display: flex;
-        justify-content: center;
-        
-    }
+	.fur_links {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 100px;
+	}
 	.reverse {
 		flex-direction: row-reverse;
 	}
@@ -142,4 +144,4 @@ export const Fittings = styled(FittingsComponent)`
 		line-height: 32px;
 		text-align: center;
 	}
-`
+`;

@@ -1,37 +1,28 @@
-import styled from "styled-components";
-import { Header } from "../../Header/Header";
-import { Podval } from "../../Podval/Podval";
-import {data} from './SlidingDoors'
-import WindowSection from "../PvcWindows/WindowSection";
+import styled from 'styled-components';
+import { Header } from '../../Header/Header';
+import { Podval } from '../../Podval/Podval';
+import { data } from './SlidingDoors.js';
+import WindowSection from '../PvcWindows/WindowSection';
 
-
-
-
-
-const SlidingDoorsComponent = ({className}) =>{
-    return (
-    <div>
-                <Header />
-                <div className={className}>
-                    <div className="fw-container">
-                        <h3 className="PVC_h3">Раздвижные двери</h3>
-                    </div>
-                    <div className="sections">
-                        <WindowSection data={data} reverse={true} showReadMore={false} />
-                    </div>
-                </div>
-                <Podval />
-            </div>
-    )
-}
-
-
-
-
+const SlidingDoorsComponent = ({ className }) => {
+	return (
+		<div>
+			<Header />
+			<div className={className}>
+				<div className="fw-container">
+					<h3 className="PVC_h3">Раздвижные двери</h3>
+				</div>
+				<div className="sections">
+					<WindowSection data={data} reverse={true} showReadMore={false} />
+				</div>
+			</div>
+			<Podval />
+		</div>
+	);
+};
 
 export const SlidingDoors = styled(SlidingDoorsComponent)`
-    
-.section {
+	.section {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -124,8 +115,5 @@ export const SlidingDoors = styled(SlidingDoorsComponent)`
 		font-size: 19px;
 		line-height: 32px;
 		text-align: center;
-
-
-    }
-
-`
+	}
+`;

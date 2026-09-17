@@ -1,40 +1,28 @@
-import styled from "styled-components";
-import { Header } from "../../Header/Header";
-import { Podval } from "../../Podval/Podval";
-import {data} from "./WindowsSills"
-import WindowSection from "../PvcWindows/WindowSection";
+import styled from 'styled-components';
+import { Header } from '../../Header/Header';
+import { Podval } from '../../Podval/Podval';
+import { data } from './WindowsSills';
+import WindowSection from '../PvcWindows/WindowSection';
 
-
-
-
-
-
-
-
-const WindowSillsComponend = ({className}) => {
- return(
-         <div>
-                    <Header />
-                    <div className={className}>
-                        <div className="fw-container">
-                            <h3 className="PVC_h3">Подоконники</h3>
-                        </div>
-                        <div className="sections">
-                            <WindowSection data={data} />
-                        </div>
-                    </div>
-                    <Podval />
-                </div>
- )    
-}
-
-
-
-
-
+const WindowSillsComponend = ({ className }) => {
+	return (
+		<div>
+			<Header />
+			<div className={className}>
+				<div className="fw-container">
+					<h3 className="PVC_h3">Подоконники</h3>
+				</div>
+				<div className="sections">
+					<WindowSection data={data} reverse={false} showReadMore={false} />
+				</div>
+			</div>
+			<Podval />
+		</div>
+	);
+};
 
 export const WindowSills = styled(WindowSillsComponend)`
-.section {
+	.section {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -61,7 +49,7 @@ export const WindowSills = styled(WindowSillsComponend)`
 
 	.fw-text {
 		width: 100%;
-		max-width: 555px;
+		max-width: 700px;
 	}
 	.fw-container {
 		display: flex;
@@ -105,7 +93,7 @@ export const WindowSills = styled(WindowSillsComponend)`
 	}
 	.fw-text {
 		font-family: 'Roboto Slab';
-		width: 555px;
+		width: 700px;
 		color: #29293a;
 		font-size: 20px;
 		line-height: 32px;
@@ -127,4 +115,5 @@ export const WindowSills = styled(WindowSillsComponend)`
 		font-size: 19px;
 		line-height: 32px;
 		text-align: center;
-	}`
+	}
+`;

@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { Product } from './Product.jsx';
-import { href } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
 
 const ProductsContainer = ({ className }) => {
+	const navigate = useNavigate();
+	const toLink = () => {
+		navigate('/ProductUslug');
+	};
 	const mass = [
 		{
 			id: 1,
@@ -10,20 +15,35 @@ const ProductsContainer = ({ className }) => {
 			text: 'Пластиковые окна',
 			href: '/PvcWindows',
 		},
-		{ id: 2, img: '../../public/./Product/люминевое.jpg', text: 'Алюминиевые окна',href:'/AluminumWindows' },
-		{ id: 3, img: '../../public/./Product/лоджия.jpg', text: 'Балконы и лоджии', href:'/BalconiesLoggias' },
-		{ id: 4, img: '../../public/./Product/нестандартное.jpg', text: 'Нестандартные окна', href:'/NonStandartWindows' },
+		{
+			id: 2,
+			img: '../../public/./Product/люминевое.jpg',
+			text: 'Алюминиевые окна',
+			href: '/AluminumWindows',
+		},
+		{
+			id: 3,
+			img: '../../public/./Product/лоджия.jpg',
+			text: 'Балконы и лоджии',
+			href: '/BalconiesLoggias',
+		},
+		{
+			id: 4,
+			img: '../../public/./Product/нестандартное.jpg',
+			text: 'Нестандартные окна',
+			href: '/NonStandartWindows',
+		},
 		{
 			id: 5,
 			img: '../../public/./Product/перегородки-пвх.jpg',
 			text: 'Перегородки из ПВХ',
-			href:'/PvcPartitions'
+			href: '/PvcPartitions',
 		},
 		{
 			id: 6,
 			img: '../../public/./Product/пластиковые-двери.jpg',
 			text: 'Пластиковые двери',
-			href:'/PlasticDoors'
+			href: '/PlasticDoors',
 		},
 	];
 	return (
@@ -32,8 +52,11 @@ const ProductsContainer = ({ className }) => {
 				<h3>Наша продукция</h3>
 			</div>
 			<Product mass={mass} />
-			<div className='product_button'><button className="all_products">Все продукты</button></div>
-
+			<div className="product_button">
+				<button onClick={toLink} className="all_products">
+					Все продукты
+				</button>
+			</div>
 		</div>
 	);
 };
@@ -41,13 +64,12 @@ const ProductsContainer = ({ className }) => {
 export const Products = styled(ProductsContainer)`
 	padding: 40px 0;
 	margin: 0;
-	
 
 	.product_text {
 		text-align: center;
 		margin-bottom: 30px;
 	}
-	.product_button{
+	.product_button {
 		display: flex;
 	}
 
@@ -61,7 +83,7 @@ export const Products = styled(ProductsContainer)`
 		color: #222938;
 		margin: 0;
 	}
-.all_products {
+	.all_products {
 		background-color: #0c54a0;
 		font-size: 34px;
 		color: #fff;
@@ -69,7 +91,7 @@ export const Products = styled(ProductsContainer)`
 		height: 74px;
 		margin: 0 auto;
 	}
-	a{
+	a {
 		text-decoration: none;
 	}
 `;
