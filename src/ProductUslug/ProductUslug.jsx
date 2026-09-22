@@ -1,11 +1,9 @@
+import styled from 'styled-components';
+import { Header } from '../Header/Header';
+import { Podval } from '../Podval/Podval';
+import { Product } from '../Product/Product';
 
-import styled from "styled-components";
-import { Header } from "../Header/Header";
-import { Podval } from "../Podval/Podval";
-import { Product } from "../Product/Product";
-
-
-const ProductUslugComponent = ({className}) =>{
+const ProductUslugComponent = ({ className }) => {
 	const mass = [
 		{
 			id: 1,
@@ -13,82 +11,158 @@ const ProductUslugComponent = ({className}) =>{
 			text: 'Пластиковые окна',
 			href: '/PvcWindows',
 		},
-		{ id: 2, img: '../../public/./Product/люминевое.jpg', text: 'Алюминиевые окна',href:'/AluminumWindows' },
-		{ id: 3, img: '../../public/./Product/лоджия.jpg', text: 'Балконы и лоджии', href:'/BalconiesLoggias' },
-		{ id: 4, img: '../../public/./Product/нестандартное.jpg', text: 'Нестандартные окна', href:'/NonStandartWindows' },
+		{
+			id: 2,
+			img: '../../public/./Product/люминевое.jpg',
+			text: 'Алюминиевые окна',
+			href: '/AluminumWindows',
+		},
+		{
+			id: 3,
+			img: '../../public/./Product/лоджия.jpg',
+			text: 'Балконы и лоджии',
+			href: '/BalconiesLoggias',
+		},
+		{
+			id: 4,
+			img: '../../public/./Product/нестандартное.jpg',
+			text: 'Нестандартные окна',
+			href: '/NonStandartWindows',
+		},
 		{
 			id: 5,
 			img: '../../public/./Product/перегородки-пвх.jpg',
 			text: 'Перегородки из ПВХ',
-			href:'/PvcPartitions'
+			href: '/PvcPartitions',
 		},
 		{
 			id: 6,
 			img: '../../public/./Product/пластиковые-двери.jpg',
 			text: 'Пластиковые двери',
-			href:'/PlasticDoors'
+			href: '/PlasticDoors',
 		},
-        {
-            id:7,
-            img:"../../public/Product/профили-300x300.jpg",
-            text:"Профили",
-            href:""
-        },{
-            id:8,
-            img:"../../public/Product/стеклопакет-300x300.jpg",
-            text:"Стеклопакеты",
-            href:"/DoubleGazedWindows"
-        },{
-            id:9,
-            img:"../../public/Product/фурнитура-300x300.jpg",
-            text:"Фурнитура",
-            href:"/Fittings"
-        },{
-            id:10,
-            img:"../../public/Product/подоконники-300x300.jpg",
-            text:"Подоконники",
-            href:"/WindowStill"
-        },{
-            id:11,
-            img:"../../public/Product/водотливы-300x300.jpg",
-            text:"Водоотливы",
-            href:"/DrainageSystem"
-        },{
-            id:12,
-            img:"../../public/Product/раздвежные-двери-300x300.jpg",
-            text:"Раздвижные двери",
-            href:"/SlidingDoors"
-        }
+		{
+			id: 7,
+			img: '../../public/Product/профили-300x300.jpg',
+			text: 'Профили',
+			href: '',
+		},
+		{
+			id: 8,
+			img: '../../public/Product/стеклопакет-300x300.jpg',
+			text: 'Стеклопакеты',
+			href: '/DoubleGazedWindows',
+		},
+		{
+			id: 9,
+			img: '../../public/Product/фурнитура-300x300.jpg',
+			text: 'Фурнитура',
+			href: '/Fittings',
+		},
+		{
+			id: 10,
+			img: '../../public/Product/подоконники-300x300.jpg',
+			text: 'Подоконники',
+			href: '/WindowStill',
+		},
+		{
+			id: 11,
+			img: '../../public/Product/водотливы-300x300.jpg',
+			text: 'Водоотливы',
+			href: '/DrainageSystem',
+		},
+		{
+			id: 12,
+			img: '../../public/Product/раздвежные-двери-300x300.jpg',
+			text: 'Раздвижные двери',
+			href: '/SlidingDoors',
+		},
+	];
+	const massUslug = [
+		{
+			id: 1,
+			img: '../../public/Uslugi/zamer.jpg',
+			text: 'Бесплатный замер',
+			href: '/FreeWndowMeasurement',
+		},
+		{
+			id: 2,
+			img: '../../public/Uslugi/osteklenie.jpg',
+			text: 'Остекление балконов и лоджий',
+			href: '/GlazingBalconiesLoggias',
+		},
+		{
+			id: 3,
+			img: '../../public/Uslugi/izgotovlenie.jpg',
+			text: 'Изготовление окон на заказ',
+			href: '/CustomWindowManufacturing',
+		},
+		{
+			id: 4,
+			img: '../../public/Uslugi/montajGost.jpg',
+			text: 'Монтаж окон по ГОСТУ',
+			href: '/GostWindowInstallation',
+		},
+		{
+			id: 5,
+			img: '../../public/Uslugi/otkos.jpg',
+			text: 'Отделка откосов',
+			href: '/WindowRevealFinishing',
+		},
+		{
+			id: 6,
+			img: '../../public/Uslugi/zamenaFur.png',
+			text: 'Замена и установка фурнитуры',
+			href: '/WindowHardwareService',
+		},
+		{
+			id: 7,
+			img: '../../public/Uslugi/ustanovkaPereg.jpg',
+			text: 'Установка перегородок',
+			href: '/PartitionInstallation',
+		},
+		{
+			id: 8,
+			img: '../../public/Uslugi/zamenaStekl.jpg',
+			text: 'Замена Стеклопакетов',
+			href: '/GlassPackageReplacement',
+		},
+		{
+			id: 9,
+			img: '../../public/Uslugi/dostavka.jpg',
+			text: 'Доставка',
+			href: '/Delivery',
+		},
 	];
 
-    return (
-        <div>
-            <Header/>
-    <div className={className}>
-            <div className="product_text">
-                <h3>Наша продукция</h3>
-            </div>
-            <Product mass={mass} />
-        </div>
+	return (
+		<div>
+			<Header />
+			<div className={className}>
+				<div className="product_text">
+					<h3>Наша продукция</h3>
+				</div>
+				<Product mass={mass} />
+				<div className="uslug_text">
+					<h3>Услуги</h3>
+				</div>
+				<Product mass={massUslug} />
+			</div>
 
-            <Podval/>
-        </div>
-    )
-}
-
-
-
-
-
-
+			<Podval />
+		</div>
+	);
+};
 
 export const ProductUslug = styled(ProductUslugComponent)`
-.product_text {
+	.product_text,
+	.uslug_text {
 		text-align: center;
 		margin-bottom: 30px;
 	}
 
-	.product_text h3 {
+	.product_text h3,
+	.uslug_text h3 {
 		font-family: 'Roboto Slab';
 		font-style: normal;
 		font-weight: 700;
@@ -98,5 +172,4 @@ export const ProductUslug = styled(ProductUslugComponent)`
 		color: #222938;
 		margin: 30px;
 	}
-    
-    `
+`;

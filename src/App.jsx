@@ -14,6 +14,15 @@ import { DrainageSystem } from './ProductsPage/DrainageSystems/DrainageSystems.j
 import { SlidingDoors } from './ProductsPage/SlidingDoors/SlidingDoors.jsx';
 import { ForDealers } from './ForDealers/ForDealers.jsx';
 import { ForPartners } from './ForPartners/ForPartners.jsx';
+import { CustomWindowManufacturing } from './UslugPages/CustomWindowManufacturing/CustomWindowManufacturing.jsx';
+import { FreeWndowMeasurement } from './UslugPages/FreeWndowMeasurement/FreeWndowMeasurement.jsx';
+import { GlazingBalconiesLoggias } from './UslugPages/GlazingBalconiesLoggias/GlazingBalconiesLoggias.jsx';
+import { GostWindowInstallation } from './UslugPages/GostWindowInstallation/GostWindowInstallation.jsx';
+import { WindowRevealFinishing } from './UslugPages/WindowRevealFinishing/WindowRevealFinishing.jsx';
+import { WindowHardwareService } from './UslugPages/WindowHardwareService/WindowHardwareService.jsx';
+import { PartitionInstallation } from './UslugPages/PartitionInstallation/PartitionInstallation.jsx';
+import { GlassPackageReplacement } from './UslugPages/GlassPackageReplacement/GlassPackageReplacement.jsx';
+import { Delivery } from './UslugPages/Delivery/Delivery.jsx';
 import { BrowserRouter, Routes, Router, Link, Route } from 'react-router-dom';
 
 function App() {
@@ -44,6 +53,39 @@ function App() {
 						<Route path="/SlidingDoors" element={<SlidingDoors />} />
 						<Route path="/ForDealers" element={<ForDealers />} />
 						<Route path="/ForPartners" element={<ForPartners />} />
+						<Route
+							path="/CustomWindowManufacturing"
+							element={<CustomWindowManufacturing />}
+						/>
+						<Route
+							path="/FreeWndowMeasurement"
+							element={<FreeWndowMeasurement />}
+						/>
+						<Route
+							path="GlazingBalconiesLoggias"
+							element={<GlazingBalconiesLoggias />}
+						/>
+						<Route
+							path="GostWindowInstallation"
+							element={<GostWindowInstallation />}
+						/>
+						<Route
+							path="WindowRevealFinishing"
+							element={<WindowRevealFinishing />}
+						/>
+						<Route
+							path="WindowHardwareService"
+							element={<WindowHardwareService />}
+						/>
+						<Route
+							path="PartitionInstallation"
+							element={<PartitionInstallation />}
+						/>
+						<Route
+							path="GlassPackageReplacement"
+							element={<GlassPackageReplacement />}
+						/>
+						<Route path="Delivery" element={<Delivery />} />
 					</Routes>
 				</BrowserRouter>
 			</div>

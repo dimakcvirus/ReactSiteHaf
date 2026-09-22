@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Header } from '../Header/Header';
+import { Podval } from '../Podval/Podval.jsx';
+import { Parallax } from '../Parallax/Parallax.jsx';
 import imgOne from '../../public/company/logo-1.png';
 import imgTwo from '../../public/company/logo_2.png';
 import imgThree from '../../public/company/titan_af.jpg';
@@ -66,6 +68,8 @@ const CompanyContainer = ({ className }) => {
 					</div>
 				</div>
 			</div>
+			{/* <Parallax /> */}
+			<Podval />
 		</div>
 	);
 };

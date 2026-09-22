@@ -90,6 +90,14 @@ const AdresContainer = ({ className }) => {
 						<div>
 							<h6>Телефон: +7 (4722) 50-55-33</h6>
 						</div>
+						<div>
+							<p>
+								Email:{' '}
+								<a href="mailto:mailbox@tdhafner.ru">
+									mailbox@tdhafner.ru
+								</a>
+							</p>
+						</div>
 					</div>
 				</div>
 
